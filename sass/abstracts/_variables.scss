@@ -1,0 +1,38 @@
+//COLORS
+$color-primary: #55c57a;
+$color-primary-light: #7ed56f;
+$color-primary-dark: #28b485;
+
+$color-secondary-light: #ffb900;
+$color-secondary-dark: #ff7730;
+
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #5643fa;
+
+$color-white: #fff;
+$color-black: #000;
+
+$color-grey-dark: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+
+//Font Sizes
+$default-font-size: 1.6rem;
+
+//GRID
+$grid-width: 114rem;
+$gutter-horizontal: 6rem;
+$gutter-verticaal: 8rem;
+$gutter-verticaal-small: 6rem;
+
+//CARDS LINEAR GRADIANT
+$linear-gradient-primary: linear-gradient(to right bottom , $color-primary-light, $color-primary-dark);
+$linear-gradient-secondary: linear-gradient(to right bottom , $color-secondary-light, $color-secondary-dark);
+$linear-gradient-tertiary: linear-gradient(to right bottom , $color-tertiary-light, $color-tertiary-dark);
+
+$linear-gradient-primary-transparent: linear-gradient(to right bottom , rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8));
+$linear-gradient-secondary-transparent: linear-gradient(to right bottom , rgba($color-secondary-light, 0.8), rgba($color-secondary-dark, 0.8));
+$linear-gradient-tertiary-transparent: linear-gradient(to right bottom , rgba($color-tertiary-light, 0.8), rgba($color-tertiary-dark, 0.8));
