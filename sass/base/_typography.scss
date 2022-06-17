@@ -18,7 +18,7 @@
         font-size: 6rem;
         font-weight: 400;
         letter-spacing: 3.5rem;
-    
+
         animation-name: MoveInLeft;
         animation-duration: 1s;
         animation-timing-function: ease-out;
@@ -28,14 +28,15 @@
             letter-spacing: 1rem;
         }
     }
+
     &--sub {
         display: block;
         font-size: 2rem;
         font-weight: 700;
         letter-spacing: 1.75rem;
-    
+
         animation: MoveInRight 1s ease-out;
-        
+
         @include respond(phone) {
             letter-spacing: 0.5rem;
         }
@@ -61,7 +62,7 @@
         font-size: 2.5rem;
     }
 
-    &:hover{
+    &:hover {
         transform: skewX(15deg) skewY(2deg) scale(1.1);
         text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
     }
@@ -76,7 +77,7 @@
 .paragraph {
     font-size: $default-font-size;
 
-    &:not(:last-child){
+    &:not(:last-child) {
         margin-bottom: 3rem;
     }
 }

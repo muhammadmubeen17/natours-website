@@ -17,8 +17,8 @@
         width: 100%;
         height: 100%;
         backface-visibility: hidden;
-        border-radius: 0.3rem;  
-        box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);      
+        border-radius: 0.3rem;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
 
         &--front {
             background-color: $color-white;
@@ -30,20 +30,22 @@
             &-1 {
                 background-image: $linear-gradient-secondary;
             }
+
             &-2 {
                 background-image: $linear-gradient-primary;
             }
+
             &-3 {
                 background-image: $linear-gradient-tertiary;
             }
         }
     }
 
-    &:hover &__side--front{
+    &:hover &__side--front {
         transform: rotateY(-180deg);
     }
 
-    &:hover &__side--back{
+    &:hover &__side--back {
         transform: rotateY(0);
     }
 
@@ -52,11 +54,11 @@
         height: 23rem;
         background-size: cover;
         background-blend-mode: soft-light;
-        -webkit-clip-path:  polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         border-top-left-radius: 0.3rem;
         border-top-right-radius: 0.3rem;
-        
+
         &-1 {
             background-image: $linear-gradient-secondary, url(/images/sea_explorer.jpg);
         }
@@ -81,7 +83,7 @@
         color: $color-white;
         width: 75%;
     }
-    
+
     &__heading_span {
         padding: 1rem 1.5rem;
         -webkit-box-decoration-break: clone;
@@ -107,12 +109,12 @@
             list-style: none;
             width: 80%;
             margin: 0 auto;
-            
+
             li {
                 font-size: 1.5rem;
                 padding: 1rem;
                 text-align: center;
-                
+
                 &:not(:last-child) {
                     border-bottom: $color-grey-light-2 solid 1px;
                 }
@@ -122,7 +124,7 @@
     }
 
     // BACK SIDE STYLING
-    
+
     &__cta {
         position: absolute;
         top: 50%;
@@ -150,28 +152,28 @@
 
 
 
-    
+
     @include respond(tab-port) {
         height: auto;
         background-color: $color-white;
-        box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15); 
+        box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
         border-radius: 0.3rem;
-    
+
         &__side {
             height: auto;
             position: relative;
             box-shadow: none;
-    
+
             &--back {
                 transform: rotateY(0);
                 clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
             }
         }
-    
-        &:hover &__side--front{
+
+        &:hover &__side--front {
             transform: rotateY(0);
         }
-        
+
         &__details {
             padding: 2rem 3rem
         }
@@ -185,11 +187,11 @@
             width: 100%;
             padding: 7rem 4rem 4rem 4rem;
         }
-    
+
         &__price-box {
             margin-bottom: 3rem;
         }
-    
+
         &__price-value {
             font-size: 5rem;
         }

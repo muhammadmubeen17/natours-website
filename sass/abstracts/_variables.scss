@@ -29,10 +29,10 @@ $gutter-verticaal: 8rem;
 $gutter-verticaal-small: 6rem;
 
 //CARDS LINEAR GRADIANT
-$linear-gradient-primary: linear-gradient(to right bottom , $color-primary-light, $color-primary-dark);
-$linear-gradient-secondary: linear-gradient(to right bottom , $color-secondary-light, $color-secondary-dark);
-$linear-gradient-tertiary: linear-gradient(to right bottom , $color-tertiary-light, $color-tertiary-dark);
+$linear-gradient-primary: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+$linear-gradient-secondary: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+$linear-gradient-tertiary: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
 
-$linear-gradient-primary-transparent: linear-gradient(to right bottom , rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8));
-$linear-gradient-secondary-transparent: linear-gradient(to right bottom , rgba($color-secondary-light, 0.8), rgba($color-secondary-dark, 0.8));
-$linear-gradient-tertiary-transparent: linear-gradient(to right bottom , rgba($color-tertiary-light, 0.8), rgba($color-tertiary-dark, 0.8));
+$linear-gradient-primary-transparent: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8));
+$linear-gradient-secondary-transparent: linear-gradient(to right bottom, rgba($color-secondary-light, 0.8), rgba($color-secondary-dark, 0.8));
+$linear-gradient-tertiary-transparent: linear-gradient(to right bottom, rgba($color-tertiary-light, 0.8), rgba($color-tertiary-dark, 0.8));

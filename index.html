@@ -14,9 +14,10 @@
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
 
     <title>Natours | Exciting Tour For Adventure</title>
+
 </head>
 
-<body class="body">
+<body class="body" id="home">
 
     <div class="navigation">
         <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
@@ -29,11 +30,36 @@
 
         <nav class="navigation__nav">
             <ul class="navigation__list">
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Natours</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Your Benfits</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Popular Tours</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>View Stories</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Book Now</a></li>
+                <li class="navigation__item">
+                    <a href="#home" class="navigation__link">
+                        <span>01</span>Home
+                    </a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#section-about" class="navigation__link">
+                        <span>02</span>About Natours
+                    </a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#section-features" class="navigation__link">
+                        <span>03</span>Your Benfits
+                    </a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#section-tours" class="navigation__link">
+                        <span>04</span>Popular Tours
+                    </a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#section-stories" class="navigation__link">
+                        <span>05</span>View Stories
+                    </a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#section-booking" class="navigation__link">
+                        <span>06</span>Book Now
+                    </a>
+                </li>
             </ul>
         </nav>
     </div>
@@ -53,7 +79,7 @@
 
     <main>
         <!--SECTION ABOUT-->
-        <section class="section-about">
+        <section class="section-about" id="section-about">
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
                     Exciting tours for adventurous people
@@ -92,7 +118,7 @@
         </section>
 
         <!--SECTION FEATURES-->
-        <section class="section-features">
+        <section class="section-features" id="section-features">
             <div class="row">
 
                 <div class="col-1-of-4">
@@ -253,7 +279,7 @@
         </section>
 
         <!--SECTION STORIES-->
-        <section class="section-stories">
+        <section class="section-stories" id="section-stories">
             <div class="background_video">
                 <video class="background_video-content" autoplay muted loop>
                     <source src="./videos/Ocean-video.mp4" type="video/mp4">
@@ -342,7 +368,8 @@
 
         </section>
 
-        <section class="section-booking">
+        <!--SECTION BOOKING -->
+        <section class="section-booking" id="section-booking">
             <div class="row">
                 <div class="book">
                     <div class="book__form">
@@ -443,6 +470,15 @@
         </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(".navigation__link").click(function (e) {
+            $('.navigation__checkbox:checkbox').each(function () {
+                this.checked = !this.checked;
+            });
+        });
+    </script>
 </body>
 
 </html>

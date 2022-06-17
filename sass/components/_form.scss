@@ -15,13 +15,13 @@
         border-bottom: 0.3rem solid transparent;
         width: 90%;
         display: block;
-        transition: all 0.3s;    
-    
+        transition: all 0.3s;
+
         &:focus {
             outline: none;
             box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
-            border-bottom: 0.3rem solid $color-primary;    
-        
+            border-bottom: 0.3rem solid $color-primary;
+
             &:invalid {
                 border-bottom: 0.3rem solid $color-secondary-dark;
             }
@@ -30,7 +30,7 @@
         &::-webkit-input-placeholder {
             color: $color-grey-dark-2;
         }
-    }    
+    }
 
     &__label {
         font-size: 1.2rem;
@@ -43,7 +43,7 @@
         transition: all 0.3s;
     }
 
-    &__input:placeholder-shown + &__label {
+    &__input:placeholder-shown+&__label {
         opacity: 0;
         visibility: hidden;
         transform: translateY(-4rem);
@@ -54,10 +54,10 @@
         display: inline-block;
     }
 
-    &__radio-input{
+    &__radio-input {
         display: none;
     }
-    
+
     &__radio-label {
         font-size: $default-font-size;
         cursor: pointer;
@@ -85,13 +85,13 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%,-50%);            
+            transform: translate(-50%, -50%);
             opacity: 0;
             transition: all 0.2s;
         }
     }
 
-    &__radio-input:checked ~ &__radio-label &__radio-button::after {
+    &__radio-input:checked~&__radio-label &__radio-button::after {
         opacity: 1;
     }
 

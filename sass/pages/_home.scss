@@ -10,16 +10,16 @@
 
 .section-features {
     padding: 20rem 0;
-    background-image: linear-gradient(to right bottom , 
-    rgba($color-primary-light, 0.8) ,  
-    rgba($color-primary-dark, 0.8)) , 
-    url(/images/Backgroud_image-2.jpg);
+    background-image: linear-gradient(to right bottom,
+            rgba($color-primary-light, 0.8),
+            rgba($color-primary-dark, 0.8)),
+        url(/images/Backgroud_image-2.jpg);
     background-size: cover;
     margin-top: -10rem;
 
     transform: skewY(-7deg);
 
-    & > * {
+    &>* {
         transform: skewY(7deg);
     }
 
@@ -57,29 +57,29 @@
 }
 
 .book {
-    background-image: linear-gradient(105deg, 
-                        rgba($color-white, 0.9) 0%, 
-                        rgba($color-white, 0.9) 50%, 
-                        transparent 50%), 
-                        url(/images/Backgroud_image-2.jpg);
+    background-image: linear-gradient(105deg,
+            rgba($color-white, 0.9) 0%,
+            rgba($color-white, 0.9) 50%,
+            transparent 50%),
+        url(/images/Backgroud_image-2.jpg);
 
     background-size: cover;
     border-radius: 0.3rem;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
-    
+
     @include respond(tab-land) {
-        background-image: linear-gradient(105deg, 
-                            rgba($color-white, 0.9) 0%, 
-                            rgba($color-white, 0.9) 65%, 
-                            transparent 65%), 
-                            url(/images/Backgroud_image-2.jpg);
+        background-image: linear-gradient(105deg,
+                rgba($color-white, 0.9) 0%,
+                rgba($color-white, 0.9) 65%,
+                transparent 65%),
+            url(/images/Backgroud_image-2.jpg);
     }
 
     @include respond(tab-port) {
-        background-image: linear-gradient(to right, 
-                            rgba($color-white, 0.9) 0%, 
-                            rgba($color-white, 0.9) 100%), 
-                            url(/images/Backgroud_image-2.jpg);
+        background-image: linear-gradient(to right,
+                rgba($color-white, 0.9) 0%,
+                rgba($color-white, 0.9) 100%),
+            url(/images/Backgroud_image-2.jpg);
     }
 
     &__form {
@@ -88,10 +88,12 @@
 
         @include respond(tab-land) {
             width: 65%;
+            padding: 5rem;
         }
 
-        @include respond(tab-land) {
+        @include respond(tab-port) {
             width: 100%;
+            padding: 4rem;
         }
     }
 }

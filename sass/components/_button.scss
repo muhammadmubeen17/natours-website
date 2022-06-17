@@ -1,6 +1,7 @@
 .button {
+
     &,
-    &:link, 
+    &:link,
     &:visited {
         font-size: $default-font-size;
         text-decoration: none;
@@ -10,12 +11,12 @@
         display: inline-block;
         transition: all 0.2s;
         position: relative;
-      
+
         //Changes for <button> element
         border: none;
         cursor: pointer;
     }
-    
+
     &::after {
         content: "";
         display: inline-block;
@@ -28,26 +29,26 @@
         z-index: -1;
         transition: all 0.5s;
     }
-    
+
     &:hover {
         transform: translateY(-0.3rem);
         box-shadow: 0px 1rem 2rem rgba($color-black, 0.2);
-        
+
         &::after {
             transform: scaleX(1.4) scaleY(1.6);
             opacity: 0;
         }
     }
-    
+
     &:active,
     &:focus {
         transform: translateY(-0.1rem);
-        box-shadow: 0 0.5rem 1rem rgba($color-black,0.2);
-    
+        box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+
         //Changes for <button> element
         outline: none;
     }
-    
+
     &--white {
         background-color: $color-white;
         color: $color-grey-dark;
@@ -56,7 +57,7 @@
             background-color: $color-white;
         }
     }
-    
+
     &--green {
         background-color: $color-primary;
         color: $color-white;
@@ -65,17 +66,18 @@
             background-color: $color-primary;
         }
     }
-    
+
     &--animation {
         animation: MoveUp 0.3s ease-out;
         animation-delay: 0.75s;
         animation-fill-mode: backwards;
     }
-    
+
 }
 
 .button_2 {
-    &:link, 
+
+    &:link,
     &:visited {
         font-size: $default-font-size;
         font-weight: 600;
@@ -84,11 +86,11 @@
         display: inline-block;
         transition: all 0.2s;
     }
-    
+
     &--green {
         color: $color-primary;
         border-bottom: $color-primary solid 0.1rem;
-        
+
         &:hover {
             color: $color-white;
             background-color: $color-primary;
@@ -98,13 +100,13 @@
     &--white {
         color: $color-white;
         border-bottom: $color-white solid 0.1rem;
-        
+
         &:hover {
             color: $color-primary;
             background-color: $color-white;
         }
     }
-    
+
     &:hover {
         box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
         transform: translateY(-0.2rem);
